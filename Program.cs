@@ -119,5 +119,10 @@ namespace CSharpBasic
             double circleArea = PI * Math.Pow(radius, 2);
             Console.WriteLine($"원의 면적 = {circleArea}");
         }
+
+        static void CalSquare()
+        {
+            Console.WriteLine("사각형의 폭을 입력하세요.");
+        }
     }
 }
