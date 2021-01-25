@@ -1,5 +1,6 @@
 ﻿#pragma warning disable IDE0051, IDE0060
 using System;
+using System.Collections;
 
 namespace CSharpBasic
 {
@@ -324,6 +325,29 @@ namespace CSharpBasic
 
             Console.WriteLine($"sum={sum}");
 
+        }
+
+        //배열
+        /*
+            string [] players = new string[3] {"a", "b", "c"};
+
+            string [] players = new string[3];
+            players[0] = "a";
+            players[1] = "b";
+            players[2] = "c";
+
+            int[] weaponType = new int[3];
+
+            * 2차원 배열
+            int[,] arr2D = new int[3,5];
+            float[][] dynamicArr2D = new float[3][]; //가변 배열
+
+        */
+        static void Cal10()
+        {
+            //ArrayList
+
+            //List
         }
     }
 }
