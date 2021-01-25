@@ -42,7 +42,8 @@ namespace CSharpBasic
             //Cal03();
             //Cal04();
             //CalSquare();
-            Cal05();
+            //Cal05();
+            Cal06();
         }
 
         //함수의 정의
@@ -165,5 +166,16 @@ namespace CSharpBasic
                 Console.WriteLine($"Entered player count {maxPlayers}");
             }
         }
+
+        //3항 연산자
+        /* 
+            (condition) ? value1 : value2;
+        */
+        static void Cal06()
+        {
+            int a = 3;
+            string str = (a % 2 == 0) ? "짝수" : "홀수";
+            Console.WriteLine(str);
+       }
     }
 }
