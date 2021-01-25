@@ -1,6 +1,7 @@
 ﻿#pragma warning disable IDE0051, IDE0060
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace CSharpBasic
 {
@@ -347,6 +348,7 @@ namespace CSharpBasic
         static void Cal10()
         {
             //ArrayList
+            // boxing / unboxing
             ArrayList arrayList = new ArrayList();
             arrayList.Add(100);
             arrayList.Add("문자");
@@ -358,6 +360,29 @@ namespace CSharpBasic
             }
 
             //List
+            List<string> message = new List<string>();
+            message.Add("Hi! all");
+            message.Add("good");
+            message.Add("thanks");
+
+            foreach (var msg in message)
+            {
+                Console.WriteLine(msg);
+            }
+
+            //스택(Stack) / 큐(Queue)
+            Stack<int> stack = new Stack<int>();
+
+            for(int i=0; i<10; i++ )
+            {
+                stack.Push(i);
+            }
+
+            while (stack.Count > 0)
+            {
+                int popValue = stack.Pop();
+                Console.WriteLine(popValue);
+            }
         }
     }
 }
