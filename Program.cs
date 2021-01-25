@@ -44,7 +44,8 @@ namespace CSharpBasic
             //CalSquare();
             //Cal05();
             //Cal06();
-            Cal07();
+            //Cal07();
+            Cal08();
         }
 
         //함수의 정의
@@ -220,5 +221,25 @@ namespace CSharpBasic
                     break;                    
            }
        }
+
+       //반복문 
+       /*
+            for
+            foreach
+            while
+            do/while
+
+            for(init_value ; condition; increase_value)
+            {
+                Logic;
+            }
+        */
+        static void Cal08()
+        {
+            for (int i=0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
     }
 }
