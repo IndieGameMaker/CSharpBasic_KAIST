@@ -346,6 +346,15 @@ namespace CSharpBasic
         static void Cal10()
         {
             //ArrayList
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(100);
+            arrayList.Add("문자");
+            arrayList.Add(2000.0f);
+
+            foreach (var value in arrayList)
+            {
+                Console.WriteLine(value);
+            }
 
             //List
         }
