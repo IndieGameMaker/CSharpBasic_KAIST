@@ -291,10 +291,39 @@ namespace CSharpBasic
             string[] items = new string[3] {"SWORD", "HP", "POWER"};
 
 
-            for(int i=0; i<items.Length; i++)
+            for (int i=0; i<items.Length; i++)
             {
                 Console.WriteLine($"items[{i}] = {items[i]}");
             }
+
+            foreach (var item in items)
+            {
+                Console.WriteLine($"items = {item}");
+            }
+
+            //while 구문 / do while 구문
+            /*
+                while(조건==참)
+                {
+                    로직1;
+                }
+
+                do
+                {
+                    로직2;
+                }while(조건==참)
+            */
+            int i = 0;
+            int sum = 0;
+
+            while (i <= 10)
+            {
+                sum += i; //sum = sum + i;
+                i++; //i = i + 1
+            }
+
+            Console.WriteLine($"sum={sum}");
+
         }
     }
 }
