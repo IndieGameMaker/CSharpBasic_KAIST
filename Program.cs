@@ -120,9 +120,25 @@ namespace CSharpBasic
             Console.WriteLine($"원의 면적 = {circleArea}");
         }
 
+
+        /*
+        사각형의 폭과 높이를 입력받아서 면적을 계산한 후 콘솔에 출력한다.
+
+        1. "사각형의 폭을 입력하세요." 문자열 출력
+        2. 값을 입력받아서 폭 변수에 저장한다.
+        3. "사각형의 높이를 입력하세요." 문자열을 출력
+        4. 값을 입력받아서 높이 변수에 저장한다.
+        5. 폭과 높이 변수값을 서로 곱한 후 출력한다.
+        */
         static void CalSquare()
         {
             Console.WriteLine("사각형의 폭을 입력하세요.");
+            string width = Console.ReadLine();
+            Console.WriteLine("사각형의 높이를 입력하세요>");
+            string height = Console.ReadLine();
+
+            float area = float.Parse(width) * float.Parse(height);
+            Console.WriteLine($"사각형의 면적 {width} * {height} = {area}");
         }
     }
 }
