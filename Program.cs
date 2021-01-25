@@ -41,6 +41,7 @@ namespace CSharpBasic
             //Cal02();
             //Cal03();
             //Cal04();
+            CalSquare();
         }
 
         //함수의 정의
