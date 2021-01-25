@@ -383,6 +383,23 @@ namespace CSharpBasic
                 int popValue = stack.Pop();
                 Console.WriteLine(popValue);
             }
+
+
+            Console.WriteLine("");
+
+            //Queue
+            Queue<int> queue = new Queue<int>();
+
+            for(int i=0; i<10; i++ )
+            {
+                queue.Enqueue(i);
+            }
+
+            foreach(var _queue in queue)
+            {
+                Console.WriteLine(_queue);
+            }
+
         }
     }
 }
