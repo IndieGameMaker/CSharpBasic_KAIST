@@ -41,7 +41,8 @@ namespace CSharpBasic
             //Cal02();
             //Cal03();
             //Cal04();
-            CalSquare();
+            //CalSquare();
+            Cal05();
         }
 
         //함수의 정의
@@ -140,6 +141,29 @@ namespace CSharpBasic
 
             float area = float.Parse(width) * float.Parse(height);
             Console.WriteLine($"사각형의 면적 {width} * {height} = {area}");
+        }
+        //String -> Float
+        // float.Parse(string)
+        // int.Parse(string)
+
+        //static readonly int MAX_PLAYERS = 10;
+
+        static void Cal05()
+        {
+            const int MAX_PLAYERS = 10;
+
+            Console.Write("입장가능한 플레이어 수?");
+            string strNum = Console.ReadLine();
+            int maxPlayers = int.Parse(strNum);
+
+            if (maxPlayers >= MAX_PLAYERS)
+            {
+                Console.WriteLine("Exceed Max Player !!!");
+            }
+            else
+            {
+                Console.WriteLine($"Entered player count {maxPlayers}");
+            }
         }
     }
 }
