@@ -400,6 +400,39 @@ namespace CSharpBasic
                 Console.WriteLine(_queue);
             }
 
+            //딕셔너리 Dictionary 자료형
+            /*
+                (Key, Value)
+                Add(키, 저장값);
+            */
+            Dictionary<int, string> dic = new Dictionary<int, string>();
+
+            for (int i=0; i < 10; i++)
+            {
+                dic.Add(i, $"Weapon_{i}");
+            }
+
+            foreach (var _dic in dic)
+            {
+                Console.WriteLine($"{_dic.Key} = {_dic.Value}");
+            }
+
+            /*
+                HashTable
+                Key, Value            
+            */
+            Hashtable ht = new Hashtable();
+
+            ht.Add("key1", 1000);
+            ht.Add("key2", 2000);
+            ht.Add("Key3", 3000);
+
+            string key = "key2";
+
+            if (ht.ContainsKey(key))
+            {
+                Console.WriteLine(ht[key]);
+            }
         }
     }
 }
