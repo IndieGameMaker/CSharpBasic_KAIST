@@ -313,13 +313,13 @@ namespace CSharpBasic
                     로직2;
                 }while(조건==참)
             */
-            int i = 0;
+            int idx = 0;
             int sum = 0;
 
-            while (i <= 10)
+            while (idx <= 10)
             {
-                sum += i; //sum = sum + i;
-                i++; //i = i + 1
+                sum += idx; //sum = sum + i;
+                idx++; //i = i + 1
             }
 
             Console.WriteLine($"sum={sum}");
