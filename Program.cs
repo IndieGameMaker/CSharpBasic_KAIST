@@ -48,7 +48,8 @@ namespace CSharpBasic
             //Cal07();
             //Cal08();
             //DrawStar();
-            Cal09();
+            //Cal09();
+            Cal10();
         }
 
         //함수의 정의
