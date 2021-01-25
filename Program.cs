@@ -236,10 +236,37 @@ namespace CSharpBasic
         */
         static void Cal08()
         {
-            for (int i=0; i < 10; i++)
+            for (int i=1; i <= 10; i++)
             {
                 Console.WriteLine(i);
             }
+
+            for (int i=0; i<10; i++)
+            {
+                Console.Write("*");
+            }
+
+            for (int i=2 ; i<10; i++)
+            {
+                for (int j=1; j<10; j++)
+                {
+                    Console.WriteLine($"{i} X {j} = {i*j}");
+                }
+                Console.WriteLine("");
+            }
+        }
+
+        static void DrawStar()
+        {
+            /*
+
+            *
+            **
+            ***
+            ****
+            *****
+            
+            */
         }
     }
 }
