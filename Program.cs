@@ -43,7 +43,8 @@ namespace CSharpBasic
             //Cal04();
             //CalSquare();
             //Cal05();
-            Cal06();
+            //Cal06();
+            Cal07();
         }
 
         //함수의 정의
@@ -176,6 +177,48 @@ namespace CSharpBasic
             int a = 3;
             string str = (a % 2 == 0) ? "짝수" : "홀수";
             Console.WriteLine(str);
+
+            //비교연산자
+            if (a % 2 == 0)
+            {      
+                str = "짝수";    
+            }
+            else
+            {
+                str = "홀수";
+            }
+       }
+
+        //Switch-case
+       static void Cal07()
+       {
+           /*
+                switch([value])
+                {
+                    case [value1]:
+                        [logic];
+                        break;
+                    case [value2]:
+                        [logic2];
+                        break;
+                }
+           */
+
+           Console.Write("Enter number (1,2,3):");
+           string num = Console.ReadLine();
+
+           switch (int.Parse(num))
+           {
+               case 1:
+                    Console.WriteLine("Num = 1");
+                    break;
+               case 2:
+                    Console.WriteLine("Num = 2");
+                    break;                    
+               case 3:
+                    Console.WriteLine("Num = 3");
+                    break;                    
+           }
        }
     }
 }
