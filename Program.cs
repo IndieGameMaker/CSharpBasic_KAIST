@@ -45,7 +45,9 @@ namespace CSharpBasic
             //Cal05();
             //Cal06();
             //Cal07();
-            Cal08();
+            //Cal08();
+            //DrawStar();
+            Cal09();
         }
 
         //함수의 정의
@@ -259,7 +261,7 @@ namespace CSharpBasic
         static void DrawStar()
         {
             /*
-
+            연습문제
             *
             **
             ***
@@ -267,6 +269,32 @@ namespace CSharpBasic
             *****
             
             */
+            for (int i=0; i < 6; i++)
+            {
+                for(int j=0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
+            }
+        }
+    
+        //foreach 구문
+        static void Cal09()
+        {
+            //배열
+            /*
+                items[0] = "SWORD";
+                items[1] = "HP";
+                items[2] = "POWER";
+            */
+            string[] items = new string[3] {"SWORD", "HP", "POWER"};
+
+
+            for(int i=0; i<items.Length; i++)
+            {
+                Console.WriteLine($"items[{i}] = {items[i]}");
+            }
         }
     }
 }
